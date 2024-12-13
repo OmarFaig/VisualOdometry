@@ -1,0 +1,6 @@
+numpy>=1.19.4
+opencv-python>=4.5.0
+open3d>=0.13.0
+matplotlib>=3.3.3
+tqdm>=4.54.0
+pathlib>=1.0.1 
