@@ -347,8 +347,11 @@ def main():
             slam = process_dataset(data_dir, K)
         else:
             # For live video, use default camera matrix
-            camera_matrix = np.array([[718.856, 0, 607.1928],
-                                    [0, 718.856, 185.2157],
+            #if you have a camera matrix, use it
+            #K, P = _load_calib(os.path.join(data_dir, "calib.txt"))
+
+            camera_matrix = np.array([[525.0, 0, 319.5],
+                                    [0, 525.0, 239.5],
                                     [0, 0, 1]])
             slam = process_live_video(camera_matrix)
         
